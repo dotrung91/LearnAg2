@@ -1,0 +1,47 @@
+<div class="table-responsive">
+    <table class="table">
+      <thead>
+        <tr class="info">
+          <th width = "20%">Name</th>
+          <th width = "40%">input</th>
+          <th width = "40%">Output</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td scope="row">Capitalize</td>
+          <td>{{text}}</td>
+          <td>{{text | capital}}</td>
+        </tr>
+        <tr>
+          <td scope="row">Odd Or Even</td>
+          <td>
+            <ul>
+              <li *ngFor="let number of arrNumber">{{number}}</li>
+            </ul>
+          </td>
+          <td>
+            <ul>
+              <li *ngFor="let number of arrNumber | oddOrEven:false">{{number}}</li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td scope="row">Soft </td>
+          <td><ul><li *ngFor="let name of arrName">{{ name }}</li></ul></td>
+          <td><ul><li *ngFor="let name of arrName | softPipe">{{ name }}</li></ul></td>
+        </tr>
+        <tr>
+          <td scope="row">Soft </td>
+          <td>{{descripttion}}</td>
+          <td>{{descripttion | summaryPipe:20}}</td>
+        </tr>
+        
+        <tr>
+          <td scope="row">Category </td>
+          <td><ul><li *ngFor="let name of categories">{{ name }}</li></ul></td>
+          <td><ul><li *ngFor="let name of categories | categoryPipe">{{ name }}</li></ul></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>

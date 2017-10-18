@@ -1,0 +1,8 @@
+<div class="form-group">
+  <select #sizeTitle (change) = 'changeSize(sizeTitle.value)'  class="form-control col-3" name="" id="">
+    <option *ngFor = 'let size of sizes' [selected] = 'size === sizeSelected' >{{size}}</option>
+  </select>
+  <select #currencyValue (change) = "changeCurrency(currencyValue.value)"   class="form-control col-3" name="" id="">
+    <option  *ngFor = 'let currency of currencys'>{{currency}}</option>
+  </select>
+</div>

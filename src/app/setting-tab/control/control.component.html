@@ -1,0 +1,8 @@
+<div class="form-group">
+  <div class="row">
+    <label for="">Select Tab</label>
+    <select class="form-control" #selectab (change) = setValueTab(selectab.value)>
+      <option *ngFor="let tabvalue of valueTabs">{{tabvalue}}</option>
+    </select  >
+  </div>
+</div>

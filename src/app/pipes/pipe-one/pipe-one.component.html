@@ -1,0 +1,68 @@
+<div class="table-responsive">
+  <table class="table">
+    <thead>
+      <tr class="info">
+        <th width = "20%">Name</th>
+        <th width = "40%">input</th>
+        <th width = "40%">Output</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td scope="row">uppercase</td>
+        <td>{{courseObj.name}}</td>
+        <td>{{courseObj.name | uppercase}}</td>
+      </tr>
+      <tr>
+        <td scope="row">lowercase</td>
+        <td>{{courseObj.name}}</td>
+        <td>{{courseObj.name | lowercase}}</td>
+      </tr>
+      <tr>
+        <td scope="row">Slice</td>
+        <td>{{courseObj.name}}</td>
+        <td>{{courseObj.name | slice:0:3}}</td>
+      </tr>
+      <tr>
+        <td scope="row">Slice</td>
+        <td>{{courseObj.name}}</td>
+        <td>{{courseObj.name | slice:-3:-1}}</td>
+      </tr>
+      <tr>
+        <td scope="row">Slice</td>
+        <td>
+          <ul>
+            <li *ngFor="let item of courseObj.require">{{item}}</li>
+          </ul>
+        </td>
+        <td>{{ courseObj.require | slice:0:1 }}</td>
+      </tr>
+      <tr>
+        <td scope="row">Slice Number</td>
+        <td>{{courseObj.price}}</td>
+        <td>{{courseObj.price | number }}</td>
+      </tr>
+      <tr>
+        <td scope="row">Slice Percent</td>
+        <td>{{percentA}}</td>
+        <td>{{percentA | percent }}</td>
+      </tr>
+      <tr>
+        <td scope="row">Slice Percent</td>
+        <td>{{percentB}}</td>
+        <td>{{percentB | percent:'3.0-4' }}</td>
+      </tr>
+      <tr>
+        <td scope="row">Currency</td>
+        <td>{{priceC}}</td>
+        <td>{{priceC | currency:'VND':true:'5.0-0' }}</td>
+      </tr>
+
+      <tr>
+        <td scope="row">Date</td>
+        <td>{{courseObj.Date}}</td>
+        <td>{{courseObj.Date | date:'dd/mm/y '}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

@@ -1,0 +1,23 @@
+<div class="table-responsive">
+    <table class="table">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Name</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let name of listNames; let i = index" [ngClass]="{'firt': checkFirt(i), 'last': checkLast(i), 'even':checkNumber(i)}">
+          <td scope="row">{{i+1}}</td>
+          <td>{{name}}</td>
+        </tr>
+      </tbody>
+    </table>
+</div>
+<div>
+  <div>
+    <button (click)="dec()" title="smaller">-</button>
+    <button (click)="inc()" title="bigger">+</button>
+    <label [style.font-size.px]="size">FontSize: {{size}}px</label>
+  </div>
+</div>

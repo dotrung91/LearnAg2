@@ -1,0 +1,14 @@
+<h1 class="text-center">Pipe Project Customer</h1>
+<app-control-category
+    (sizeTitles) = 'handSize($event)'
+    [sizeSelected] = sizeSelected
+    (currencyName) = 'handCurrencyName($event)'
+    (currencyValue) = 'handCurrencyValue($event)'
+    
+>   
+</app-control-category>
+<app-show
+   [sizeTitles] = sizeOn
+   [currencyName] = currencyName
+   [currencyValue] = currencyValue
+></app-show>
