@@ -1,4 +1,4 @@
-import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-list-name',
@@ -13,9 +13,6 @@ export class ListNameComponent implements OnInit {
     'Chi',
     'Phuong'
   ];
-
-  @Input()  size: number | string;
-  @Output() sizeChange = new EventEmitter<number>();
 
   checkFirt(i) {
     if (i === 0) {
@@ -36,20 +33,6 @@ export class ListNameComponent implements OnInit {
       return false;
     }
   }
-
-
-
-
-  dec() { this.resize(-1); }
-  inc() { this.resize(+1); }
-
-  resize(delta: number) {
-    this.size = Math.min(40, Math.max(8, +this.size + delta));
-    this.sizeChange.emit(this.size);
-  }
-
-
-
 
   constructor() { }
 

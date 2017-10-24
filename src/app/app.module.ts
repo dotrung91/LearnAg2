@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import { NgModel } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { ListNameComponent } from './list-name/list-name.component';
 import { SettingTabComponent } from './setting-tab/setting-tab.component';
@@ -18,6 +18,14 @@ import { ToolCategoryComponent } from './tool-category/tool-category.component';
 import { ShowComponent } from './tool-category/show/show.component';
 import { ControlCategoryComponent } from './tool-category/control-category/control-category.component';
 import { FormsModule } from '@angular/forms';
+import { ListHeroComponent } from './list-hero/list-hero.component';
+import { ListHeroControlComponent } from './list-hero/list-hero-control/list-hero-control.component';
+import { ListHeroShowComponent } from './list-hero/list-hero-show/list-hero-show.component';
+import { CheckflyPipe } from './pipes/ListPipes/checkfly.pipe';
+import { SttPipePipe } from './pipes/ListPipes/stt-pipe.pipe';
+import { ExpandCollapseComponent } from './expand-collapse/expand-collapse.component';
+import { HightLightComponent } from './detective/hight-light/hight-light.component';
+import { HightLightDirective } from './detective/hight-light/hight-light.directive';
 @NgModule({
   declarations: [
     AppComponent,
@@ -36,6 +44,14 @@ import { FormsModule } from '@angular/forms';
     ToolCategoryComponent,
     ShowComponent,
     ControlCategoryComponent,
+    ListHeroComponent,
+    ListHeroControlComponent,
+    ListHeroShowComponent,
+    CheckflyPipe,
+    SttPipePipe,
+    ExpandCollapseComponent,
+    HightLightComponent,
+    HightLightDirective,
   ],
   imports: [
     BrowserModule,

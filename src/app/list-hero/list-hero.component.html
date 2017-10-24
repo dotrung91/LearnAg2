@@ -1,0 +1,13 @@
+<h1 class="text-center">List Hero Fly</h1>
+<div class="row">
+  <div class="col-4">
+    <app-list-hero-control
+      (newHero) = "addToList($event)"
+    ></app-list-hero-control>
+  </div>
+  <div class="col-8">
+    <app-list-hero-show
+      [listhero] = listName
+    ></app-list-hero-show>
+  </div>
+</div>

@@ -1,0 +1,10 @@
+<div class="form-group">
+    <label for="">ADD HERO</label>
+    <input class="form-control" type="text" class="form-control" [(ngModel)]="nameNewHero" #name placeholder="Hero Name">
+    <p>Name: {{nameNewHero}}</p>
+    <label class="form-check-label">
+    <input type="checkbox" class="form-check-input" #fly >
+    Can Fly
+  </label><br>
+    <button (click)="addHero(name.value, fly.checked)" class="btn btn-primary">ADD HERO</button>
+</div>

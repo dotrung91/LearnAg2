@@ -30,6 +30,8 @@ export class ShowComponent implements OnInit {
       'img': '../assets/img/su.jpg'
     }
   ];
+  active = false;
+
   @Input() sizeTitles: number;
   @Input() currencyName = 'VND';
   @Input() currencyValue = 1;

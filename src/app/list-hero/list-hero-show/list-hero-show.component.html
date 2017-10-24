@@ -1,0 +1,18 @@
+<div class="row">
+  <div class="col-5">
+    <h5>Hero can Fly</h5>
+    <ul>
+      <li *ngFor="let hero of listhero | checkfly:true; let i =index">
+        <span>{{i + 1 | sttPipe}}</span>
+        {{hero.name}}</li>
+    </ul>
+  </div>
+  <div class="col-5">
+    <h5>Hero can't Fly</h5>
+    <ul>
+      <li *ngFor="let hero of listhero | checkfly:false; let i =index ">
+          <span>{{i + 1 | sttPipe}}</span>
+          {{hero.name}}</li>
+    </ul>
+  </div>
+</div>
