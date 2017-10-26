@@ -26,6 +26,7 @@ import { SttPipePipe } from './pipes/ListPipes/stt-pipe.pipe';
 import { ExpandCollapseComponent } from './expand-collapse/expand-collapse.component';
 import { HightLightComponent } from './detective/hight-light/hight-light.component';
 import { HightLightDirective } from './detective/hight-light/hight-light.directive';
+import { CollapseExpanseDirective } from './expand-collapse/collapse-expanse.directive';
 @NgModule({
   declarations: [
     AppComponent,
@@ -52,6 +53,7 @@ import { HightLightDirective } from './detective/hight-light/hight-light.directi
     ExpandCollapseComponent,
     HightLightComponent,
     HightLightDirective,
+    CollapseExpanseDirective,
   ],
   imports: [
     BrowserModule,

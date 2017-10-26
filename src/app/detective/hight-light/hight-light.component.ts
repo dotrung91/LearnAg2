@@ -6,7 +6,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./hight-light.component.scss']
 })
 export class HightLightComponent implements OnInit {
-
+  color: string;
+  changeColor(value) {
+    this.color = value;
+  }
   constructor() { }
 
   ngOnInit() {

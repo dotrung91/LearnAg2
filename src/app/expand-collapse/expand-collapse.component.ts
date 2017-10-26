@@ -6,7 +6,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./expand-collapse.component.scss']
 })
 export class ExpandCollapseComponent implements OnInit {
-
+  show: boolean;
+  setShow(value) {
+    this.show = value;
+  }
   constructor() { }
 
   ngOnInit() {

@@ -5,11 +5,17 @@
     <h4 class="card-title">Hight Light</h4>
     <br>
     <div class="card-text">
-      <button type="button" class="btn btn-primary">Blue</button>
-      <button type="button" class="btn btn-success">Green</button>
-      <button type="button" class="btn btn-danger">Red</button>
+      <button (click) = "changeColor('blue')" type="button" class="btn btn-primary">Blue</button>
+      <button (click) = "changeColor('green')" type="button" class="btn btn-success">Green</button>
+      <button (click) = "changeColor('red')" type="button" class="btn btn-danger">Red</button>
     </div><br>
     <p appHightLight>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea, nobis?
+    </p>
+    <p [appHightLight] = "color">
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea, nobis?
+    </p>
+    <p [appHightLight] = "'red'">
       Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea, nobis?
     </p>
   </div>
